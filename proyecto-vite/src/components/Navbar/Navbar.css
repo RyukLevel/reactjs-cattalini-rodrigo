@@ -1,4 +1,4 @@
-nav{
+header{
     display: flex;    
     background-color: #f7f7f0;
     justify-content: space-between;
@@ -17,4 +17,6 @@ li{
 text-decoration: none;
 margin: 0 10px;
 justify-content: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #3C2275;
 }

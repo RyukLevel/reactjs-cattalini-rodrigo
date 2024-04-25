@@ -1,0 +1,12 @@
+.section-carrito{   
+    display: flex;    
+    align-items: center;
+    gap: 10px;    
+}
+.section-carrito img{
+    width: 50%;
+}
+.section-carrito span{
+    color: #3C2275 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

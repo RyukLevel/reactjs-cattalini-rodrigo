@@ -1,19 +1,20 @@
 import './Navbar.css'
-import logo from '../assets/imagenes/logo_pixel_warrios.png'
+import logo from '../../assets/imagenes/logo_pixel_warrios.png'
+import { CartWitget } from '../CartWitget/CartWitget'
 
 const Navbar = () => {
 return(
-<>
-<nav>
+<header>
 <img src={logo} alt="" className='logo_navbar' />
+<nav>
 <ul>
     <li>Inicio</li>
     <li>Productos</li>
     <li>Contacto</li>
 </ul>
-<p>Carrito</p>
 </nav>
-</>
+<CartWitget/>
+</header>
 )
 }
 export default Navbar;
