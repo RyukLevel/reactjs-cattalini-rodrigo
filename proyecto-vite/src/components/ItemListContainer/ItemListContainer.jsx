@@ -4,8 +4,6 @@ import {getProductos, getProductosByCategoria} from '../../utils/MockData'
 import {ItemList} from '../ItemList/ItemList'
 import {Spinner} from '../Spinner/Spinner'
 import { useParams } from 'react-router-dom';
-import { TbRuler2Off } from 'react-icons/tb'
-import { FaLessThanEqual } from 'react-icons/fa6'
 
 
 export const ItemListContainer = () => {

@@ -138,3 +138,13 @@ export const getProductosByCategoria = (categoriaId) => {
       },1000)
   })
 }
+
+export const getProductosById = (productoId) => {    
+  return new Promise((resolve,reject) => {    
+      setTimeout(() => {
+        console.log (productoId)
+        const prod = productos.find((elemento) => elemento.id === parseInt (productoId));        
+          resolve(prod)
+      },1000)
+  })
+}

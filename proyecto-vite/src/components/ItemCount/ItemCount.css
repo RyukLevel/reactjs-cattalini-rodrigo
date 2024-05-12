@@ -1,0 +1,12 @@
+.Item-Count{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0px;    
+}
+
+.Button-Count{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

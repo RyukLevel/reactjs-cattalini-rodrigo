@@ -1,5 +1,8 @@
-import { IoBagHandleOutline } from 'react-icons/io5'
 import './Item.css'
+import {Link} from "react-router-dom"
+
+
+
 export const Item = ({id,nombre,descripcion,precio,imagen}) => {
   return (
     
@@ -9,14 +12,11 @@ export const Item = ({id,nombre,descripcion,precio,imagen}) => {
             </>
         <>
             <h3>{nombre}</h3>
-            <p>{descripcion}</p>
+            {/* <p>{descripcion}</p> */}
             </>
         <>
-            <button>Ver Detalles</button>
-            </>                   
-        <>
-            <h3>Usd: {precio}</h3>
-            </>  
+            <Link to={`/productos/${id}`}>Ver Detalles</Link>
+            </>                           
 </div>      
   )
 }

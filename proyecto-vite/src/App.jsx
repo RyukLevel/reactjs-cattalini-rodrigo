@@ -6,6 +6,7 @@ import {ItemListContainer} from './components/ItemListContainer/ItemListContaine
 import {Productos} from './components/Productos/Productos.jsx'
 import {Error} from './components/Error/Error.jsx'
 import {EnConstruccion} from './components/Error/EnConstruccion.jsx'
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
   <Route path="/" element= {<Home/>}/>
   <Route path= "/productos" element={<ItemListContainer/>}/>
   <Route path= "/categoria/:categoriaId" element={<ItemListContainer/>}/>
+  <Route path= "/productos/:productoId" element={<ItemDetailContainer/>}/>
   <Route path= "/contacto" element={<EnConstruccion/>}/>
   <Route path="*" element={<h2><Error/></h2>} />
  </Routes>
