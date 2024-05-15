@@ -1,6 +1,10 @@
 main{
     padding: 30px 10px;    
-    background-color: #fffff9 ;
+    background-color: #fffff9;
+    margin: 0 0 92px 0;     
+}
+.cards{
+    margin: auto;
 }
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

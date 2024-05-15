@@ -1,7 +1,9 @@
-import React from 'react'
+import './Footer.css'
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <p className='text-footer'>Desarrollo Web con ReactJs - Buho 2024</p>
+      </footer>
   )
 }

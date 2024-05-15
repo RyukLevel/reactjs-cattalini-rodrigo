@@ -1,11 +1,11 @@
 .section-carrito{   
     display: flex;    
     align-items: center;
-    gap: 10px;    
+    gap: 5px;    
 }
 .section-carrito img{
     width: 50%;
 }
 span.carrito-contador{
-    color: #B89BFF;
+    color: #fffff9;
 }

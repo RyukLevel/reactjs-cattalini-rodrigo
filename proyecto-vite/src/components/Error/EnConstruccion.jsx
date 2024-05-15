@@ -1,7 +1,10 @@
-
+import imgConstruccion from '../../assets/imagenes/web_construccion.png'
+import './EnConstruccion.css'
 
 export const EnConstruccion = () => {
   return (
-    <div>La página se encuentra en construcción. Pronto te mostraremos lo mejor</div>
+    <div>
+<img className='img-construccion' src={imgConstruccion} alt="web_en_construccion" />
+    </div>
   )
 }

@@ -39,8 +39,8 @@ console.log(categoriaId)
     <h1>Bienvenidos al mundo Gamer</h1>
     {loading === true ? (
     <Spinner/>) : (
-    <div>
-    <ItemList productsList={products}/>    
+    <div className='cards'>
+    <ItemList  productsList={products}/>    
     </div>    
     )}  
   </main>

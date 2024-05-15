@@ -1,4 +1,3 @@
-import { ImGit } from "react-icons/im"
 import ps5_std from '../assets/imagenes/PS5_std.png'
 import xbox_x from '../assets/imagenes/Xbox_serie_x.png'
 import switch_nin from '../assets/imagenes/Nintendo_switch.png'
