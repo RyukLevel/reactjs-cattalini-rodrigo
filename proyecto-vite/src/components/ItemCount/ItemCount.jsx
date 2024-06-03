@@ -1,7 +1,7 @@
 import './ItemCount.css'
 import { useState } from "react";
 
-export const ItemCount = () => {
+export const ItemCount = ({infoAgregada}) => {
     const [contador, setContador] = useState(0);
 
     const incrementar = () => setContador(contador + 1);
@@ -11,16 +11,7 @@ export const ItemCount = () => {
         }
       };     
 
-    const infoAgregada = () => {     
-        if (contador < 1){
-            console.log(`Seleccione la cantidad de productos para agregar al carrito`)  
-        }
-        if (contador === 1){
-            console.log(`se agregó ${contador} producto al carrito`)  
-        }if (contador > 1){
-          console.log(`se agregaron ${contador} productos al carrito`)
-        }else{            
-        }}
+
     
     return (
         <>
@@ -29,7 +20,7 @@ export const ItemCount = () => {
         <p>{contador}</p>                
         <button className='Button-Count' onClick={incrementar}>+</button>
       </div>      
-      <button onClick={infoAgregada}>Agregar al carrito</button>
-      </>      
+      <button onClick={()=>infoAgregada(contador)}>Agregar al carrito</button>
+      </>
     );    
 }

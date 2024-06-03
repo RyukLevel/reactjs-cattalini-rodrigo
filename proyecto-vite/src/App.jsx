@@ -3,13 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Navbar} from './components/Layout/Navbar/Navbar.jsx'
 import {Footer} from './components/Layout/Footer/Footer.jsx'
 import {ItemListContainer} from './components/ItemListContainer/ItemListContainer.jsx'
-import {Productos} from './components/Productos/Productos.jsx'
 import {Error} from './components/Error/Error.jsx'
 import {EnConstruccion} from './components/Error/EnConstruccion.jsx'
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer.jsx';
+import CartContextProvider from './context/CartContext.jsx';
 
 function App() {
   return (
+    <CartContextProvider>
  <BrowserRouter>
 <Navbar/>
  <Routes>
@@ -21,7 +22,8 @@ function App() {
   <Route path="*" element={<h2><Error/></h2>} />
  </Routes>
 <Footer/>
- </BrowserRouter> 
+ </BrowserRouter>
+ </CartContextProvider> 
   );
 };
 
